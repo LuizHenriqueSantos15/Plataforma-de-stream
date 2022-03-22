@@ -101,6 +101,26 @@ img{
     margin-top: 10px;
 }
 
+.cont{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.sideBar{
+    margin-top: -12px;
+    background-color: #1f1f23;
+    width: 20vw;
+    height: 90vh;
+}
 
 /* media */
 
