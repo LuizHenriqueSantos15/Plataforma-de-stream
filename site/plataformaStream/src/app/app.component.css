@@ -1,0 +1,125 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    box-shadow: -1px -1px 5px black;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.loginCadastro{
+    display: flex;
+}
+
+input{
+    margin-left: -20%;
+    border-radius: 5px;
+    border: none;
+    background-color: #464649;
+    padding: 12px;
+    width: 25vw;
+    color: white;
+}
+
+.loginBtn{
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a3a3d;
+    padding: 12px;
+    width: 5vw;
+    height: 5vh;
+    color: white;
+    font-weight: bold;
+}
+
+.loginBtn:hover{
+    cursor: pointer;
+}
+
+.cadastroBtn{
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a682dd;
+    padding: 12px;
+    height: 5vh;
+    width: 7vw;
+    color: white;
+    font-weight: bold;
+}
+
+.cadastroBtn:hover{
+    cursor: pointer;
+}
+
+.divBtn{
+    margin-left: -17.5%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a3a3d;
+    width: 3vw;
+}
+
+.divBtn:hover{
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: #bebebf;
+}
+
+.procurar{
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.barraPesquisa{
+    display: flex;
+}
+
+.procurar:hover{
+    color: #a682dd;
+    transition: 0.3s all;
+}
+
+.icon{
+    margin-left: 0.5%;
+}
+
+img{
+    margin-top: 10px;
+}
+
+
+/* media */
+
+@media screen and (max-width: 768px) {
+    input{
+        height: 1vh;
+        width: 30vw;
+        margin-right: 10px;
+    }
+
+    .divBtn{
+        width: 12vw;
+    }
+
+    .loginCadastro{
+        display: none;
+    }
+
+    .icon:hover{
+        transform: scale(1.0);
+    }
+}
