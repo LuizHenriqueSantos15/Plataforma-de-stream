@@ -7,6 +7,13 @@ header{
     box-shadow: -1px -1px 5px black;
 }
 
+.canalRecomendado{
+    color: white;
+    margin-left: 5%;
+    margin-top: 6.5%;
+    text-decoration: none;
+}
+
 .icon:hover{
     transform: scale(1.1);
     transition: 0.3s all;
@@ -101,6 +108,49 @@ img{
     margin-top: 10px;
 }
 
+.canal{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 10vh;
+    padding-left: 7px;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+h1 , h4{
+    margin-top: 0px;
+    margin-left: 40%;
+    width: 100%;
+}
+
+p{
+    cursor: pointer;
+    color: #a682dd;
+    margin-left: 40%;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.videoPrincipal{
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.imgCanal{
+    border-radius: 50px;
+}
+
+.canal:hover{
+    cursor: pointer;
+    border: 0.1px solid #a682dd;
+    transition: 0.3s all;
+}
+
 .cont{
     margin-top: 20px;
     margin-left: 20px;
@@ -116,12 +166,56 @@ h3{
 }
 
 .sideBar{
-    margin-top: -12px;
+    margin-top: 8px;
     background-color: #1f1f23;
     width: 20vw;
     height: 90vh;
+    position: fixed;
 }
 
+.loginBtn:hover{
+    cursor: pointer;
+    transform: scale(1.055);
+    transition: 0.3s all;
+}
+
+.cadastroBtn:hover{
+    cursor: pointer;
+    transform: scale(1.055);
+    transition: 0.3s all;
+}
+
+.videos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 7%;
+}
+main{
+    display: flex;
+}
+
+.videoIframe{
+    margin-top: 0px;
+    margin-left: 57%;
+}
+h4{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.recomendados{
+    align-items: center;
+    color: white;
+    display: flex;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recomendadosVideo{
+    margin-left: 40%;
+}
 /* media */
 
 @media screen and (max-width: 768px) {
@@ -141,5 +235,9 @@ h3{
 
     .icon:hover{
         transform: scale(1.0);
+    }
+
+    header{
+        width: 100vw;
     }
 }

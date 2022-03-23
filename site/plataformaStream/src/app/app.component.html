@@ -29,8 +29,36 @@
     <div class="cont">
       <h3>Canais Recomendados</h3>
 
-      <div class="canal">
-        <h3>Magoules</h3>
+      <div *ngFor="let canal of canais" class="canal">
+        <article>
+          <img class="imgCanal" width="40" src={{canal.foto}} alt="">
+        </article>
+        <a target="a_blank" href={{canal.link}} class="canalRecomendado">{{canal.nome}}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contPag">
+    <div class="videoPrincipal">
+      <h1>Mural de Hinos</h1>
+      <p>27/03</p>
+      <iframe class="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/YNZc80t0Arw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="videos">
+      <div class="recomendadosVideo">
+        <p style="margin-left: 0%;">07/05</p>
+        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/U3yGyAEexpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="recomendados">
+        <p style="margin-left: 0%;">27/03</p>
+        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/qubfgS5CggQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="recomendados">
+        <p style="margin-left: 0%;">26/03</p>
+        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/KIQGjyE4ytE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
